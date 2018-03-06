@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <script>
+
+        function show(point) {
+            // 2. show the point with console.log(456)
+        }
+
+        function move(point, distance) {
+            // 3. change x,y by distance. 0,0 => 3,3
+        }
+
+        function clone(point) {
+            // 4. return another point with the same values
+        }
+
+        const myPoint = {
+            // 1. add properties for x and y with numbers
+        };
+
+        show(myPoint); // point will be in the log
+        move(myPoint, 3); 
+        show(myPoint); // show the point with new values
+        const point2 = clone(myPoint);
+        move(point2, 4);
+        show(myPoint);
+        show(point2);
+        console.log(point2 === myPoint); // false
+        const point3 = clone(myPoint);
+        console.log(point3 === myPoint); // false
+    </script>
+</head>
+
+</html>
