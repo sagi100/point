@@ -5,18 +5,28 @@
 
         function show(point) {
             // 2. show the point with console.log(456)
+            console.log(point)
         }
 
         function move(point, distance) {
             // 3. change x,y by distance. 0,0 => 3,3
+            point.x=point.x+distance;
+            point.y=point.y+distance
         }
 
         function clone(point) {
             // 4. return another point with the same values
+            const point3 = {
+                x:point.x,
+                y:point.y
+            }
+            return point3
         }
 
         const myPoint = {
             // 1. add properties for x and y with numbers
+            x:2,
+            y:2
         };
 
         show(myPoint); // point will be in the log
